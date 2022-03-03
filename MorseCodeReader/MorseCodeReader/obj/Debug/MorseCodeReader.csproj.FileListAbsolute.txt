@@ -1,0 +1,8 @@
+G:\Moj disk\FOI\6. SEM\PI\PROGRAMI\MorseCodeReader\MorseCodeReader\MorseCodeReader\obj\Debug\MorseCodeReader.csproj.AssemblyReference.cache
+G:\Moj disk\FOI\6. SEM\PI\PROGRAMI\MorseCodeReader\MorseCodeReader\MorseCodeReader\obj\Debug\MorseCodeReader.csproj.SuggestedBindingRedirects.cache
+G:\Moj disk\FOI\6. SEM\PI\PROGRAMI\MorseCodeReader\MorseCodeReader\MorseCodeReader\obj\Debug\MorseCodeReader.csproj.CoreCompileInputs.cache
+G:\Moj disk\FOI\6. SEM\PI\PROGRAMI\MorseCodeReader\MorseCodeReader\MorseCodeReader\bin\Debug\MorseCodeReader.exe.config
+G:\Moj disk\FOI\6. SEM\PI\PROGRAMI\MorseCodeReader\MorseCodeReader\MorseCodeReader\bin\Debug\MorseCodeReader.exe
+G:\Moj disk\FOI\6. SEM\PI\PROGRAMI\MorseCodeReader\MorseCodeReader\MorseCodeReader\bin\Debug\MorseCodeReader.pdb
+G:\Moj disk\FOI\6. SEM\PI\PROGRAMI\MorseCodeReader\MorseCodeReader\MorseCodeReader\obj\Debug\MorseCodeReader.exe
+G:\Moj disk\FOI\6. SEM\PI\PROGRAMI\MorseCodeReader\MorseCodeReader\MorseCodeReader\obj\Debug\MorseCodeReader.pdb
