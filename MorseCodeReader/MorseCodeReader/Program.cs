@@ -21,7 +21,7 @@ namespace MorseCodeReader
             //Unos poruke
             Console.WriteLine("Write message to translate in MORSE CODE:");
             string porukaOriginal = Console.ReadLine();
-
+            porukaOriginal = porukaOriginal.ToUpper();
             //Prijevod poruke
             char porukaZnak = ' ';
             string morseZnak = "";
@@ -32,32 +32,32 @@ namespace MorseCodeReader
                 porukaZnak = porukaOriginal[i];
 
                 //Popis slova
-                if (porukaZnak == 'a' || porukaZnak == 'A') morseZnak = ".-";
-                else if (porukaZnak == 'b' || porukaZnak == 'B') morseZnak = "-...";
-                else if (porukaZnak == 'c' || porukaZnak == 'C') morseZnak = "-.-.";
-                else if (porukaZnak == 'd' || porukaZnak == 'D') morseZnak = "-..";
-                else if (porukaZnak == 'e' || porukaZnak == 'E') morseZnak = ".";
-                else if (porukaZnak == 'f' || porukaZnak == 'F') morseZnak = "..-.";
-                else if (porukaZnak == 'g' || porukaZnak == 'G') morseZnak = "--.";
-                else if (porukaZnak == 'h' || porukaZnak == 'H') morseZnak = "....";
-                else if (porukaZnak == 'i' || porukaZnak == 'I') morseZnak = "..";
-                else if (porukaZnak == 'j' || porukaZnak == 'J') morseZnak = ".---";
-                else if (porukaZnak == 'k' || porukaZnak == 'K') morseZnak = "-.-";
-                else if (porukaZnak == 'l' || porukaZnak == 'L') morseZnak = ".-..";
-                else if (porukaZnak == 'm' || porukaZnak == 'M') morseZnak = "--";
-                else if (porukaZnak == 'n' || porukaZnak == 'N') morseZnak = "-.";
-                else if (porukaZnak == 'o' || porukaZnak == 'O') morseZnak = "---";
-                else if (porukaZnak == 'p' || porukaZnak == 'P') morseZnak = ".--.";
-                else if (porukaZnak == 'q' || porukaZnak == 'Q') morseZnak = "--.-";
-                else if (porukaZnak == 'r' || porukaZnak == 'R') morseZnak = ".-.";
-                else if (porukaZnak == 's' || porukaZnak == 'S') morseZnak = "...";
-                else if (porukaZnak == 't' || porukaZnak == 'T') morseZnak = "-";
-                else if (porukaZnak == 'u' || porukaZnak == 'U') morseZnak = "..-";
-                else if (porukaZnak == 'v' || porukaZnak == 'V') morseZnak = "...-";
-                else if (porukaZnak == 'w' || porukaZnak == 'W') morseZnak = ".--";
-                else if (porukaZnak == 'x' || porukaZnak == 'X') morseZnak = "-..-";
-                else if (porukaZnak == 'y' || porukaZnak == 'Y') morseZnak = "-.--";
-                else if (porukaZnak == 'z' || porukaZnak == 'Z') morseZnak = "--..";
+                if (porukaZnak == 'A') morseZnak = ".-";
+                else if (porukaZnak == 'B') morseZnak = "-...";
+                else if (porukaZnak == 'C') morseZnak = "-.-.";
+                else if (porukaZnak == 'D') morseZnak = "-..";
+                else if (porukaZnak == 'E') morseZnak = ".";
+                else if (porukaZnak == 'F') morseZnak = "..-.";
+                else if (porukaZnak == 'G') morseZnak = "--.";
+                else if (porukaZnak == 'H') morseZnak = "....";
+                else if (porukaZnak == 'I') morseZnak = "..";
+                else if (porukaZnak == 'J') morseZnak = ".---";
+                else if (porukaZnak == 'K') morseZnak = "-.-";
+                else if (porukaZnak == 'L') morseZnak = ".-..";
+                else if (porukaZnak == 'M') morseZnak = "--";
+                else if (porukaZnak == 'N') morseZnak = "-.";
+                else if (porukaZnak == 'O') morseZnak = "---";
+                else if (porukaZnak == 'P') morseZnak = ".--.";
+                else if (porukaZnak == 'Q') morseZnak = "--.-";
+                else if (porukaZnak == 'R') morseZnak = ".-.";
+                else if (porukaZnak == 'S') morseZnak = "...";
+                else if (porukaZnak == 'T') morseZnak = "-";
+                else if (porukaZnak == 'U') morseZnak = "..-";
+                else if (porukaZnak == 'V') morseZnak = "...-";
+                else if (porukaZnak == 'W') morseZnak = ".--";
+                else if (porukaZnak == 'X') morseZnak = "-..-";
+                else if (porukaZnak == 'Y') morseZnak = "-.--";
+                else if (porukaZnak == 'Z') morseZnak = "--..";
 
                 //Popis brojeva
                 else if (porukaZnak == '0') morseZnak = "-----";
@@ -75,7 +75,7 @@ namespace MorseCodeReader
                 else if (porukaZnak == ' ') morseZnak = "/";
                 else if (porukaZnak == '.' || porukaZnak == '.' || porukaZnak == '!' || porukaZnak == '?') morseZnak = "//";
 
-                porukaMorse = porukaMorse + " " + morseZnak;
+                porukaMorse +=morseZnak + " ";
             }
 
             //Ispis poruka
@@ -96,8 +96,7 @@ namespace MorseCodeReader
                 {
                     if (porukaMorse[j] == '.') Console.Beep(800, 400);
                     else if (porukaMorse[j] == '-') Console.Beep(800, 800);
-                    else if (porukaMorse[j] == ' ') Thread.Sleep(150);
-                    else if (porukaMorse[j] == '/') Thread.Sleep(200);
+                    else if (porukaMorse[j] == ' ' || porukaMorse[j] == '/') Thread.Sleep(400);
                     Thread.Sleep(100);
                 }
                 Console.WriteLine("\nMessage ended!");
